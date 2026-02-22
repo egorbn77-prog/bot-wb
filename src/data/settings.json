@@ -1,0 +1,33 @@
+{
+  "wbApi": {
+    "apiKey": "",
+    "baseUrl": "https://feedbacks-api.wb.ru/api/v1",
+    "pollIntervalMinutes": 5,
+    "rateLimitPerMinute": 30,
+    "isEnabled": false
+  },
+  "ai": {
+    "provider": "openai",
+    "apiKey": "",
+    "model": "gpt-3.5-turbo",
+    "maxTokens": 500,
+    "temperature": 0.7,
+    "isEnabled": false,
+    "useAsFallback": true
+  },
+  "bot": {
+    "mode": "hybrid",
+    "autoSend": false,
+    "requireConfirmation": true,
+    "keepHistory": true,
+    "historyRetentionDays": 30,
+    "notifications": {
+      "email": "",
+      "telegram": "",
+      "onNewReview": true,
+      "onError": true,
+      "onAnswerSent": false
+    }
+  },
+  "updatedAt": "2026-02-22T00:00:00.000Z"
+}

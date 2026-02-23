@@ -2,9 +2,9 @@
 
 ## Current State
 
-**Project Status**: ✅ Database added, ready for integration
+**Project Status**: ✅ Ready for deployment on free platforms
 
-The project is a Wildberries review auto-response system with AI integration. Database support has been added using Drizzle ORM with SQLite.
+The project is a Wildberries review auto-response system with AI integration. Database support has been added using Drizzle ORM with SQLite. Deployment configurations for Vercel and Railway are ready.
 
 ## Recently Completed
 
@@ -16,6 +16,7 @@ The project is a Wildberries review auto-response system with AI integration. Da
 - [x] Recipe system for common features
 - [x] WB Bot core features (UI pages, API routes, components)
 - [x] Database support with Drizzle ORM + SQLite
+- [x] Deployment configuration for Vercel and Railway
 
 ## Current Structure
 
@@ -33,6 +34,9 @@ The project is a Wildberries review auto-response system with AI integration. Da
 | `src/lib/` | Business logic (bot, AI, WB API) | ✅ Ready |
 | `src/db/` | Database schema and client | ✅ Ready |
 | `.kilocode/` | AI context & recipes | ✅ Ready |
+| `vercel.json` | Vercel deployment config | ✅ Ready |
+| `railway.toml` | Railway deployment config | ✅ Ready |
+| `DEPLOYMENT.md` | Deployment guide | ✅ Ready |
 
 ## Database Schema
 
@@ -87,6 +91,7 @@ const activeScenarios = await db.select().from(scenarios).where(eq(scenarios.isA
 
 | Date | Changes |
 |------|---------|
+| 2026-02-23 | Added deployment configuration (Vercel, Railway) and deployment guide |
 | 2026-02-22 | Added database support with Drizzle ORM + SQLite |
 | 2026-02-22 | Created WB Bot review auto-response system |
 | Initial | Template created with base setup |
